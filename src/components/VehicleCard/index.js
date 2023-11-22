@@ -6,20 +6,18 @@ const VehicleCard = ({ vehicle, mobile }) => {
     const { id, modelYear, media, price, description } = vehicle;
 
     return (
-        <>
-            <div key={id + modelYear} className="vehicleCard">
-                <img
-                    className="vehicleCard__image"
-                    alt={id}
-                    src={mobile ? media[1].url : media[0].url}
-                />
-                <div className="vehicleCard__description">
-                    <h3 className="vehicleCard__vehicleName"> Jaguar {id} </h3>
-                    <span className="vehicleCard__price"> From {price} </span>
-                    <p> {description} </p>
-                </div>
+        <div key={id + modelYear} className="vehicleCard">
+            <img
+                className="vehicleCard__image"
+                alt={id}
+                src={mobile ? media[1].url : media[0].url}
+            />
+            <div className="vehicleCard__description">
+                <h3 className="vehicleCard__vehicleName"> Jaguar {id} </h3>
+                <span className="vehicleCard__price"> From {price} </span>
+                <p> {description} </p>
             </div>
-        </>
+        </div>
     );
 };
 

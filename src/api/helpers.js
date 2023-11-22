@@ -18,6 +18,5 @@ export async function request(apiUrl) {
         return data;
     } catch (error) {
         console.error("Error making network request:", error.message);
-        // throw error; // Re-throw the error to propagate it to the calling code
     }
 }

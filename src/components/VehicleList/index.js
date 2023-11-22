@@ -10,10 +10,6 @@ export default function VehicleList() {
     const [loading, error, vehicles] = useData();
     const isMobile = useIsMobile();
 
-    useEffect(() => {
-        console.log(vehicles);
-    }, [vehicles]);
-
     if (loading) {
         return <div data-testid="loading">Loading</div>;
     }
