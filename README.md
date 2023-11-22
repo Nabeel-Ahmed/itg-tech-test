@@ -1,15 +1,33 @@
 Frontend Technical Test for [TeamITG](https://teamitg.com/)
 
 ## System requirements
+
 You’ll want to ensure you have the following already installed on your local machine before getting started with the test:
-* **Node 12+:** The current LTS (long-term support) release. We like to use a [Node Version Manager like NVM](https://github.com/nvm-sh/nvm).
-* **NPM 6+ or Yarn:** Both of these package managers have ups and downs, choose whichever you prefer. Follow the installation instructions for Yarn or NPM to make sure you're using the latest version.
+
+-   **Node 12+:** The current LTS (long-term support) release. We like to use a [Node Version Manager like NVM](https://github.com/nvm-sh/nvm).
+-   **NPM 6+ or Yarn:** Both of these package managers have ups and downs, choose whichever you prefer. Follow the installation instructions for Yarn or NPM to make sure you're using the latest version.
 
 ## Setup Instructions
+
 1. Clone this repository
 2. Type the following command to install the dependencies and run the project
-````
+
+```
 npm install && npm start
+```
+
+## Setup via docker
+
+1,First run the following command to build the container
+
+```
+$ docker build -t itg-tech-test .
+```
+
+2, Run the container using ```
+docker run -p 3000:3000 itg-tech-test
+docker run -p 8080:8080 itg-tech-test
+
 ````
 
 ## Task Instructions
@@ -65,4 +83,4 @@ If you have achieved primary tasks and would like to showcase your skills by imp
 Use linting to format the code and autofix most of the formatting issues
 ```shell script
 npm run lint
-```
+````

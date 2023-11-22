@@ -1,3 +1,26 @@
-.VehicleList {
-  width: 100%;
+@import "../../global-styles.scss";
+
+.vehicleList {
+    width: 100%;
+}
+
+@media only screen and (min-width: $breakpoint-tablet) {
+    .vehicleList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .vehicleList > div {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: $breakpoint-desktop) {
+    .vehicleList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .vehicleList > div {
+        width: 25%;
+    }
 }
