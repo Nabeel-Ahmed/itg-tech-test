@@ -1,5 +1,12 @@
+// 640px
+$breakpoint-mobile: 40em;
+// 768px
+$breakpoint-tablet: 48em;
+// 1024px
+$breakpoint-desktop: 64em;
+
 .root {
-  margin: 14px;
-  padding: 12px;
-  z-index: 12;
+    margin: 14px;
+    padding: 12px;
+    z-index: 12;
 }
