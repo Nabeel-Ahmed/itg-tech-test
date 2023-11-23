@@ -5,6 +5,17 @@ $breakpoint-tablet: 48em;
 // 1024px
 $breakpoint-desktop: 64em;
 
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://www.jaguar.co.uk/etc.clientlibs/jlr/clientlibs/clientlib-jaguar/resources/fonts/ProximaNova/ProximaNova-Regular.eot');
+}
+
+body {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+
+
 .root {
   margin: 14px;
   padding: 12px;
