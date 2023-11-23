@@ -10,5 +10,6 @@
  * @property {string} apiUrl - API URL for price, description & other details
  * @property {string} description - Description
  * @property {string} price - Price
+ *
  * @property {Array.<vehicleMedia>} media - Array of vehicle images
  */

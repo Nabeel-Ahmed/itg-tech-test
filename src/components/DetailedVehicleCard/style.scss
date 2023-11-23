@@ -1,0 +1,46 @@
+.DetailedVehicleModalCard {
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+    }
+  
+    &h3 {
+      padding-top: 5px;
+    }
+  
+    &__closeButton {
+      border-radius: 50%;
+      padding: 0.5em;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      background-color: transparent;
+    }
+  
+    &__closeButton:hover {
+      cursor: pointer; /* Change cursor on hover */
+      background-color: lightgrey; /* Change background color on hover */
+    }
+  
+    &__image {
+      height: auto;
+      width: auto;
+    }
+  
+    .DetailedVehicleModalCard__image {
+      width: 100%;
+      height: auto;
+    }
+    
+    .DetailedVehicleModalCard__info {
+      max-width: 100%;
+      text-transform: uppercase;
+
+    }
+    &__description{
+        text-transform: none;
+      }
+  
+  }
