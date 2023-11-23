@@ -12,9 +12,7 @@ const mockVehicle = {
 };
 
 test('renders a vehicle card', () => {
-  const { getByText } = render(
-    <VehicleCard vehicle={mockVehicle} mobile={false} />
-  );
+  const { getByText } = render(<VehicleCard vehicle={mockVehicle} mobile={false} />);
   expect(getByText('From £40,000')).toBeInTheDocument();
 
   // Check if vehicle name is rendered

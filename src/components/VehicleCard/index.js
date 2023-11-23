@@ -9,11 +9,7 @@ const VehicleCard = ({ vehicle, mobile }) => {
 
   return (
     <div key={id + modelYear} className="vehicleCard">
-      <img
-        className="vehicleCard__image"
-        alt={id}
-        src={mobile ? media[1].url : media[0].url}
-      />
+      <img className="vehicleCard__image" alt={id} src={mobile ? media[1].url : media[0].url} />
       <div className="vehicleCard__description">
         <h3 className="vehicleCard__vehicleName">
           {' '}

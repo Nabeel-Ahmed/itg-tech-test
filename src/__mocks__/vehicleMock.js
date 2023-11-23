@@ -14,7 +14,7 @@ export const vehicleMock = [
       },
     ],
     description:
-            'The most advanced, efficient and refined sports saloon that Jaguar has ever produced',
+      'The most advanced, efficient and refined sports saloon that Jaguar has ever produced',
     price: '£30,000',
     meta: {
       passengers: 5,

@@ -9,9 +9,7 @@ export async function request(apiUrl) {
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
-      throw new Error(
-        `Network request failed with status ${response.status}`
-      );
+      throw new Error(`Network request failed with status ${response.status}`);
     }
 
     const data = await response.json();
