@@ -1,5 +1,7 @@
 Frontend Technical Test for [TeamITG](https://teamitg.com/)
 
+Deployed at : https://moonlit-puppy-0ea6eb.netlify.app/
+
 ## System requirements
 
 You’ll want to ensure you have the following already installed on your local machine before getting
