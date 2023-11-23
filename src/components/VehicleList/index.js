@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import useData from './useData';
 import useIsMobile from './useIsMobile';
 import VehicleCard from '../VehicleCard';
@@ -29,13 +29,13 @@ export default function VehicleList() {
     return <div data-testid="error">{error}</div>;
   }
 
-  const handleCardClick = vehicleID => {
-    const selectedVehicle = vehicles.find(v => v.id === vehicleID);
+  const handleCardClick = (vehicleID) => {
+    const selectedVehicle = vehicles.find((v) => v.id === vehicleID);
     setActiveVehicle(selectedVehicle);
     openModal();
   };
 
-  const carList = vehicles.map(car => {
+  const carList = vehicles.map((car) => {
     return (
       <>
         <VehicleCard

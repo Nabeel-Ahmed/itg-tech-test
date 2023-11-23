@@ -1,15 +1,15 @@
 import React from 'react';
 import './style.scss';
 
-const Modal = ({isOpen, closeModal, content}) => {
-  const handleBackgroundClick = event => {
+const Modal = ({ isOpen, closeModal, content }) => {
+  const handleBackgroundClick = (event) => {
     // Check if the click happened on the modal background
     if (isOpen && event.target.classList.contains('modal')) {
       closeModal();
     }
   };
 
-  const handleKeyPress = event => {
+  const handleKeyPress = (event) => {
     if (isOpen && event.key === 'Escape') {
       closeModal();
     }
@@ -20,6 +20,7 @@ const Modal = ({isOpen, closeModal, content}) => {
       className={`modal ${isOpen ? 'modal--open' : ''}`}
       onClick={handleBackgroundClick}
       onKeyDown={handleKeyPress}
+      role="dialog"
     >
       <div className="modal__content">{content}</div>
     </div>
